@@ -1,0 +1,15 @@
+---
+title: "diamonds"
+output: html_document
+date: "2024-08-12"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r pressure, echo=FALSE}
+ggplot2::quickplot(x=cut, fill=color, data=ggplot2::diamonds) +
+  ggplot2::labs(subtitle = Sys.time())
+```
